@@ -1,0 +1,28 @@
+.cart{
+    background-color:rgb(248, 237, 83);
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    border-width: 0cap;
+    cursor: pointer;
+
+}
+.link{
+    color: rgb(76, 192, 238);
+    cursor: pointer;
+}
+.stock{
+color: rgb(24, 151, 7);
+}
+.Buy-now{
+    background-color: rgba(250, 163, 64, 0.986);
+    color: black;
+    height: 50px;
+    width:150px
+    ;
+    border-radius: 25px;border-width: 0px;
+
+cursor: pointer;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #submit {
+        height: 60px;
+        width: 100px;
+        font-size: medium;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 10px;
+        border-width: 1px;
+        border-color: rgb(248, 249, 250);
+        border-color: blue;
+        color: blue;
+        cursor: pointer;
+    }
+
+    #submit:hover {
+        background-color: rgb(186, 161, 255);
+        transition: background-color 1s;
+    }
+</style>
+<body>
+    <h1 id="title">Names</h1>
+    <p id="description">To display the names, click the button below.</p>
+    <button type="submit" id="submit">Save</button>
+</body>
+<script>
+    document.getElementById("submit").onclick = () => {
+        let datas = [
+            { name: "Ashok", age: 20 },
+            { name: "Abi", age: 20 },
+            { name: "Jogn", age: 20 },
+            { name: "John", age: 20 },
+            { name: "Jodha", age: 20 }
+        ];
+
+        // Map names from the array of objects
+        const names = datas.map(x => x.name).join(", ");
+        
+        // Update description and title
+        document.getElementById("description").innerText = "The names are: " + names;
+        document.getElementById("title").innerText = "The names have been changed!";
+    };
+</script>
+</html>

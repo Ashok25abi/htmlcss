@@ -1,0 +1,233 @@
+.title-of-card {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+
+
+}
+
+.product-container {
+    
+    margin-top: 50px;
+
+}
+
+.shoe-container {
+    display: inline-block;
+    margin-left: 50px;
+    height: 275px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(3, 3, 3);
+}
+
+.shoe-image {
+    height: auto;
+    width: 200px;
+    cursor: pointer;
+
+    border-radius: 5px;
+
+}
+
+.shoe-text {
+    font-weight: bold;
+    font-size: medium;
+
+    font-style: italic;
+    text-align: center;
+
+}
+
+.see-more-button {
+    height: 40px;
+    margin-left: 50px;
+    width: 100px;
+    border-width: 1px;
+    border-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.see-more-button:hover {
+    box-shadow: 0px 0px 3px rgb(5, 5, 5);
+    background-color: rgb(97, 92, 92);
+    transition: box-shadow, background-color 1s;
+}
+
+.mobile-button:hover {
+    box-shadow: 0px 0px 3px rgb(5, 5, 5);
+    background-color: rgb(97, 92, 92);
+    transition: box-shadow, background-color 1s;
+}
+
+.mobile-container {
+    display: inline-block;
+    margin-left: 30px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(3, 3, 3);
+}
+
+.mobile-image {
+    height: 175px;
+    width: 210px;
+    cursor: pointer;
+}
+
+.mobile-text {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.mobile-button {
+    height: 40px;
+    margin-left: 60px;
+    width: 100px;
+    border-width: 1px;
+    border-color: rgb(252, 252, 252);
+    border-radius: 5px;
+
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.lap-container {
+    display: inline-block;
+    margin-left: 30px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(3, 3, 3);
+}
+
+.lap-image {
+    height: 175px;
+    width: 210px;
+    cursor: pointer;
+}
+
+.lap-text {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.lap-button {
+    height: 40px;
+    margin-left: 70px;
+    width: 100px;
+    border-width: 1px;
+    border-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    margin-left: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.lap-button:hover {
+    box-shadow: 0px 0px 3px rgb(5, 5, 5);
+    background-color: rgb(97, 92, 92);
+    transition: box-shadow, background-color 1s;
+}
+
+.watch-container {
+
+    display: inline-block;
+    margin-left: 30px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(3, 3, 3);
+}
+
+.watch-image {
+    height: 175px;
+    width: 210px;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.watch-text {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.watch-button {
+    height: 40px;
+    margin-left: 70px;
+    width: 100px;
+    border-width: 1px;
+    border-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    margin-left: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+.watch-button:hover {
+    box-shadow: 0px 0px 3px rgb(5, 5, 5);
+    background-color: rgb(97, 92, 92);
+    transition: box-shadow, background-color 1s;
+
+}
+
+.airpods-container {
+
+    display: inline-block;
+    margin-left: 50px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(3, 3, 3);
+
+}
+
+.airpods-image {
+    height: 175px;
+    width: 210px;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.airpods-text {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.airpods-button {
+    height: 40px;
+    margin-left: 70px;
+    width: 100px;
+    border-width: 1px;
+    border-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    margin-left: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+.airpods-button:hover {
+
+    box-shadow: 0px 0px 3px rgb(5, 5, 5);
+    background-color: rgb(97, 92, 92);
+    transition: box-shadow, background-color 1s;
+
+}

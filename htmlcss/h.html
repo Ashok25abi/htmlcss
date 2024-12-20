@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CloneSite</title>
+    <link rel="stylesheet" href="styles/h.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img class="logo-img" src="/images/Amezonlogo.webp">
+            </div>
+            <div class="search-bar">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">products <i
+                            class="fa-sharp-duotone fa-solid fa-caret-down"></i> </button>
+                </div>
+                <input class="search-field" type="search" placeholder="Search your product">
+                <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Mobiles</a>
+                    <a href="#">Laptop</a>
+                    <a href="#">Gaming</a>
+
+                    <a href="#">Home things</a>
+                </div>
+            </div>
+            
+            <div class="lang">
+                <button class="languages">EN</button>
+            </div>
+            <div class="user-accounts">
+                <button class="accounts"> Accounts</button>
+            </div>
+            <div class="return-products">
+                <button class="return"> Returns & orders</button>
+            </div>
+            <div class="cart-items">
+                <button class="cart"> Cart</button>
+            </div>
+
+        </div>
+
+        <div class="home-page">
+            <div class="cart-image">
+                <h1 class="title-of-card">Shop Your Products With Us</h1>
+                <!--  shoe section-->
+                <div class="product-container">
+                    <div class="shoe-container">
+                        <img class="shoe-image" src="/images/shoeimg.png">
+                        <p id="shoe" class="shoe-text">Shoes</p>
+                        <button class="see-more-button" onclick="Myshoe()">View Shoes</button>
+                    </div>
+                    <!--  mobile section-->
+                    <div class="mobile-container">
+                        <img class="mobile-image" src="/images/phoneimg.avif">
+                        <p id="mobile" class="mobile-text">Mobile Phones</p>
+
+                        <button class="mobile-button" type="button" onclick="Mymobiles()"> </a> View Mobiles</button>
+
+                    </div>
+
+                    <!--  laptop section-->
+                    <div class="lap-container">
+                        <img class="lap-image" src="/images/lapimg.png">
+                        <p id="laptop" class="lap-text">Laptops</p>
+                        <button class="lap-button" onclick="Mylaptop()">View Laptops</button>
+                    </div>
+                    <!--  Watch section-->
+                    <div class="watch-container">
+                        <img class="watch-image" src="/images/watchimg.png">
+                        <p id="watch" class="watch-text">Watches</p>
+                        <button class="watch-button" onclick="Mywatch()">View watch</button>
+                    </div>
+                    <!--  Airpods section-->
+                    <div class="airpods-container">
+                        <img class="airpods-image" src="/images/whiteairpodsimg.png">
+                        <p id="airpods" class="airpods-text">Airpods</p>
+                        <button class="airpods-button" onclick="Myairpods()">View Airpods</button>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        function Myshoe() {
+            document.getElementById("shoe").innerHTML = "this is an shoe page"(alert("This is just a UI"));
+        }
+
+        function Mymobiles() {
+            document.getElementById("mobile").innerHTML = "this is an mobile page"(alert("This is just a UI"));
+        }
+
+        function Myairpods() {
+            document.getElementById("airpods").innerHTML = "this is an airpods page"(alert("This is just a UI"));
+        }
+
+        function Mywatch() {
+            document.getElementById("watch").innerHTML = "this is an watch page"(alert("This is just a UI"));
+        }
+
+        function Mylaptop() {
+            document.getElementById("laptop").innerHTML = "this is an laptop page"(alert("This is just a UI"));
+        }
+    </script>
+</body>
+
+</html>

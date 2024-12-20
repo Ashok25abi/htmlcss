@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .button {
+        box-shadow: 0px 0px 8px rgb(250, 5, 5);
+        height: 30px;
+        width: 60px;
+        border-radius: 10px;
+        border-width: 0px;
+        cursor: pointer;
+        font-size: small;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .button:hover {
+        background-color: rgb(248, 48, 48);
+        color: white;
+        transition: background-color, color 1s;
+    }
+
+    .container {
+        display: inline-block;
+        background-color: rgb(13, 13, 14);
+        padding-top: 20px;
+        color: azure;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 10px;
+        border-width: 0px;
+        margin-left: 500px;
+    }
+
+    .container:hover {
+        background-color: rgb(41, 38, 38);
+        transition: background-color 1s;
+    }
+
+    .name-field {
+        height: 30px;
+        width: 300px;
+        padding-left: 8px;
+        border-radius: 10px;
+        border-width: 0px;
+        outline: none;
+        margin-bottom: 20px;
+    }
+
+    .age-field {
+        height: 30px;
+        width: 300px;
+        border-radius: 10px;
+        padding-left: 8px;
+        border-width: 0px;
+        outline: none;
+        margin-bottom: 20px;
+    }
+
+    .dob-field {
+        height: 30px;
+        width: 300px;
+        border-radius: 10px;
+        padding-left: 8px;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        border-width: 0px;
+        text-align: center;
+        outline: none;
+        margin-bottom: 20px;
+        padding-right: 20px;
+    }
+
+    .email-field {
+        height: 30px;
+        width: 300px;
+        border-radius: 10px;
+        padding-left: 8px;
+        border-width: 0px;
+        outline: none;
+        margin-bottom: 20px;
+    }
+
+    .password-field {
+        height: 30px;
+        width: 300px;
+        border-radius: 10px;
+        padding-left: 8px;
+        border-width: 0px;
+        outline: none;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <h1 id="title"></h1>
+    <div class="container">
+        <h1 id="h1" class="title">Your Data's</h1>
+        <h1 id="h2" class="data">hello test's</h1>
+        <!-- Name -->
+        <label> Name :</label>
+        <input type="text" id="name" class="name-field">
+        <br><br>
+        <!-- Age -->
+        <label> Age :</label>
+        <input type="number" id="age" class="age-field" readonly>
+        <br><br>
+        <!-- DOB -->
+        <label> DOB :</label>
+        <input type="date" id="dob" class="dob-field">
+        <br><br>
+        <!-- Email -->
+        <label> Email :</label>
+        <input type="email" id="email" class="email-field">
+        <br><br>
+        <!-- password -->
+        <label> Password :</label>
+        <input type="password" id="password" class="password-field">
+        <br><br>
+        <button class="button" id="submit">Submit</button>
+    </div>
+</body>
+<script>
+    // Automatically calculate age when DOB is selected
+    document.getElementById("dob").addEventListener("change", function () {
+        const dob = new Date(this.value);
+        const today = new Date();
+
+        let age = today.getFullYear() - dob.getFullYear();
+        const monthDiff = today.getMonth() - dob.getMonth();
+        const dayDiff = today.getDate() - dob.getDate();
+
+        if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+            age--;
+        }
+
+        document.getElementById("age").value = age;
+    });
+
+    // Submit button functionality
+    document.getElementById("submit").onclick = () => {
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+        let dob = document.getElementById("dob").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        const h2 = document.querySelector("h2");
+        const dosomething = () => {
+            alert("hello you clicked !");
+
+        };
+        h2.addEventListener("click", dosomething, false);
+
+        console.log({
+            Name: name,
+            Age: age,
+            DOB: dob,
+            Email: email,
+            Password: password,
+        });
+
+
+
+
+    };
+</script>
+
+</html>

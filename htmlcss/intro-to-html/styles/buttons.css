@@ -1,0 +1,46 @@
+.company-site {
+    background-color: rgb(51, 109, 235);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 20px;
+
+
+}
+
+.company-site:hover {
+    background-color: rgb(58, 58, 253);
+}
+
+.save {
+    background-color: white;
+    color: rgb(51, 109, 235);
+    border-radius: 25px;
+    border-color: rgb(51, 109, 235);
+    font-weight: bold;
+    border-width: 1px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+    font-size: medium;
+    transition: color 1s;
+}
+
+.save:hover {
+    background-color:  rgb(51, 109, 235);
+    color: white;
+    
+    transition: border-width background-color color
+     1s;
+
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="navbar.js" defer></script>
+</head>
+<style>
+    /* Navbar Container */
+    body{
+        background-color:  rgb(248, 78, 78);;
+    }
+    .navbar {
+        font-size: small;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        background-color: rgb(255, 138, 138);
+        box-shadow: 0px 0px 10px rgb(5, 5, 5);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 0 20px;
+    }
+
+    /* Navbar List */
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 100%;
+    }
+
+    /* Navbar Items */
+    .navbar li {
+        margin-right: 20px;
+        cursor: pointer;
+        transition: color 1s, box-shadow 0.3s;
+    }
+
+    /* Hover Effect for Items */
+    .navbar li:hover {
+        color: rgb(253, 252, 252);
+        background-color: rgb(248, 78, 78);
+        box-shadow: 0px 2px 10px rgb(7, 7, 7);
+        height: 0px;
+    }
+
+    /* Align Login Section to the Right */
+    .login {
+        margin-left: auto;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="home">Home</li>
+            <li class="project">Project</li>
+            <li class="contact">Contact</li>
+            <li class="about">About</li>
+            <li class="login">Login</li>
+            <li class="register">Register</li>
+            <li class="logout">Logout</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

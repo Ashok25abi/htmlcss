@@ -1,0 +1,47 @@
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.para {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    margin-top: 5px;
+
+
+}
+.description{
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 25px;
+    width: 300px;
+}
+.get-started{
+    background-color: rgb(65, 136, 65);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    border-width: 0px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.Model{
+    font-weight: bold;
+
+}
+.order{
+line-height: 20px;
+
+font-size: medium;
+font-family:'Times New Roman', Times, serif;
+
+}
+
+.touchless-delievery{
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+}
